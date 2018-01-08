@@ -22,11 +22,14 @@ void main() {
 		if (row<1) cout << "Некорректная высота!\n";
 	} while (row<1);
 		
-	for (int i = (row - 1); i >= 0; i--) {
+	for (int i = (row - 1); i >= 0; i--) { //Количество пробелов в первой строке = кол-во строк - 1
 		
-		for (int k = i; k > 0; k--) cout << " ";
-		for (int k = birdNow; k > 0; k--) cout << "^";
+		for (int k = i; k > 0; k--) cout << " "; //выводим в строке i пробелов
+		for (int k = birdNow; k > 0; k--) cout << "^"; //выводим birdNow знаков ^
 		birdNow += 2;
-		cout << endl;
+		cout << endl; // новая строка
 	}
 	
+
+	system("pause");
+}
